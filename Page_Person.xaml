@@ -1,0 +1,68 @@
+﻿<Page x:Class="WPF_Buhl.Page_Person"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_Buhl"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="800"
+      Title="Page_Person">
+
+    <Grid  >
+        <Grid.RowDefinitions>
+
+
+
+            <RowDefinition/>
+
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition  Width="20*" />
+
+            <ColumnDefinition  Width="20*" />
+
+        </Grid.ColumnDefinitions>
+        <Label Content="Upload Photo" HorizontalAlignment="Left" Margin="45,10,0,0" VerticalAlignment="Top" Height="31" Width="84"/>
+        <Button Content="Click" HorizontalAlignment="Left" Margin="135,12,0,0" VerticalAlignment="Top" Click="Button_Click_6"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="45,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="Surname" HorizontalAlignment="Left" Margin="45,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="Street Name" HorizontalAlignment="Left" Margin="45,120,0,0" VerticalAlignment="Top"/>
+        <Label Content="House No" HorizontalAlignment="Left" Margin="45,150,0,0" VerticalAlignment="Top" />
+        <Label Content="Post Code" HorizontalAlignment="Left" Margin="45,170,0,0" VerticalAlignment="Top" />
+        <Label Content="City" HorizontalAlignment="Left" Margin="45,200,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contact" HorizontalAlignment="Left" Margin="45,230,0,0" VerticalAlignment="Top"/>
+
+        
+        <Label Content="" HorizontalAlignment="Left" Margin="45,270,0,0" VerticalAlignment="Top" Height="54"/>
+
+        <TextBox x:Name="txt_name" HorizontalAlignment="Left" Margin="120,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_surname" HorizontalAlignment="Left" Margin="120,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_streetname" HorizontalAlignment="Left" Margin="120,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_houseno" HorizontalAlignment="Left" Margin="120,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_postcode" HorizontalAlignment="Left" Margin="120,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_city" HorizontalAlignment="Left" Margin="120,210,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_contact" HorizontalAlignment="Left" Margin="120,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <StackPanel x:Name="tbPanel" Margin="0,270,0,0"  VerticalAlignment="Top" Width="60"/>
+        
+        <Button x:Name="btn_contact" Content="+" HorizontalAlignment="Left" Margin="70,270,0,0" VerticalAlignment="Top" Click="Button_Click_7"/>
+        <Button Content="Insert" HorizontalAlignment="Left" Margin="60,360,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="210,360,0,0" VerticalAlignment="Top" Click="Button_Click_4"/>
+        <DataGrid x:Name="dg" Grid.Column="1" BorderThickness="2" Margin="0,0,0,100"  BorderBrush="BlueViolet" />
+        <Button Grid.Column="1" Content="Show Data" HorizontalAlignment="Left" Margin="50,185,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Grid.Column="1" Content="Update" HorizontalAlignment="Left" Margin="160,185,0,0" VerticalAlignment="Top" Click="Button_Click_3"/>
+        <Button Grid.Column="1" Content="Delete" HorizontalAlignment="Left" Margin="295,185,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
+       
+        <DataGrid x:Name="dgs" Margin="0,220,0,10" Grid.Column="1" BorderThickness="2" BorderBrush="Brown" />
+        <Button Grid.Column="1" Content="Search" HorizontalAlignment="Left" Margin="100,360,0,0" VerticalAlignment="Top" Click="Button_Click_5"/>
+        <TextBox x:Name="txt_search" Grid.Column="1" HorizontalAlignment="Left" Margin="210,360,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="txt_search_TextChanged"/>
+        <TextBox x:Name="txt_IdToUpdate" HorizontalAlignment="Left" Margin="210,180,0,0" TextWrapping="Wrap" Text="ID to Update" VerticalAlignment="Top" Width="60" Grid.Column="1"/>
+        <TextBox x:Name="txt_delId" Grid.Column="1" HorizontalAlignment="Left" Margin ="350,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+
+        <Image x:Name="img1" Grid.Column="0" HorizontalAlignment="Left" Height="100" Margin="300,2,0,0" VerticalAlignment="Top" Width="100"/>
+
+
+    </Grid>
+</Page>
